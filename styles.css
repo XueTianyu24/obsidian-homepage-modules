@@ -1,0 +1,21 @@
+/* Homepage Modules — 样式入口
+ *
+ * 各功能模块当前使用内联样式（忠实移植自原 DataviewJS 版本，保证视觉一致）。
+ * 这里只放少量无法内联的全局样式。
+ */
+
+/* 模块使用说明弹窗 */
+.homepage-help-modal {
+  width: 680px;
+  max-width: 86vw;
+}
+.homepage-help-modal .modal-content {
+  max-height: 72vh;
+  overflow-y: auto;
+}
+
+/* 手机端：说明弹窗占满更多宽度 */
+.is-phone .homepage-help-modal {
+  width: 96vw;
+  max-width: 96vw;
+}
