@@ -1,7 +1,141 @@
 # Homepage Modules
 
-可扩展的个人主页 Obsidian 插件 —— 用一个 `homepage` 代码块渲染日记、待办、番茄、
-天气、统计、倒计时等交互模块。一个插件容纳多个模块，新增模块互不干扰。
+一个可扩展的 **Obsidian 个人主页插件** —— 用一个 `homepage` 代码块，渲染日记、待办、
+番茄、自律、健身、天气、统计、倒计时等 **17 个交互模块**；再用「主页」把它们拼成一张
+开箱即用的个人仪表盘。一个插件容纳多个模块，新增模块互不干扰，零主题依赖。
+
+<div align="center">
+  <img src="docs/img/hero-dark.png" width="820" alt="主页全景"><br>
+  <sub><b>一张主页装下所有模块</b> · 卡片式布局 · 可自由增删 / 调宽 / 跨行 / 切列数</sub>
+</div>
+
+---
+
+## 🌗 主题自适应（深 ↔ 浅一键切换，零配置）
+
+所有模块颜色走 Nord 语义色板，跟随 Obsidian 主题自动适配，深色浅色都好看。
+
+<div align="center">
+  <img src="docs/img/theme-compare.png" width="820" alt="深浅主题对比">
+</div>
+
+---
+
+## 🎨 核心功能模块
+
+> 每个模块都是独立的 `homepage` 代码块，单独嵌进任意笔记也能用；下面是真实渲染效果。
+
+<table>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-todo.png" width="410" alt="待办看板"><br>
+  <b>✅ 待办看板</b><br>
+  <sub>当前聚焦 + 今日待办 + 项目追踪三层（项目→任务→子任务），项目可「派单」到今日待办双向同步。</sub>
+</td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-pomodoro.png" width="410" alt="番茄专注"><br>
+  <b>🍅 番茄专注</b><br>
+  <sub>时间戳法计时（关掉 Obsidian 也不丢进度）+ 桌面悬浮窗 + 全年热力图 + 历史记录可单条删除。</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-project-log.png" width="410" alt="项目日志"><br>
+  <b>📈 项目日志</b><br>
+  <sub>项目→主题→每日条目三级管理；四视图（折叠日志 / 按天 / 热力图 / 甘特泳道），主题区间自动推导，重叠即并行。</sub>
+</td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-psyche.png" width="410" alt="精神内核"><br>
+  <b>🧭 精神内核</b><br>
+  <sub>SVG 自动布局的价值观 / 原则树（替代手画 Canvas）。多根 + 「层」分组 + 横纵向布局 + 笔记内链。</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-diary.png" width="410" alt="日记记录"><br>
+  <b>📔 日记记录</b><br>
+  <sub>每日体重 / 睡眠 / 工作 / 健身 4 个数字 + 💧 喝水打卡（早中晚各 2 杯）+ 时间段日志 + 周 / 月视图与汇总。</sub>
+</td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-vocab.png" width="410" alt="背单词"><br>
+  <b>📖 背单词</b><br>
+  <sub>FSRS-6 间隔重复（Anki 同款调度）+ ECDICT 离线中文词库查词 + 词族关联 + 复习弹窗。</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-discipline.png" width="410" alt="自律打卡"><br>
+  <b>🎯 自律打卡</b><br>
+  <sub>要做 / 限额 / 戒断 三类约束，按类型分组 + 周视图 + 顶部三卡汇总 + 7 天迷你热力 + 自定义指标（跑步距离 / 配速 / 用时）。</sub>
+</td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-weather.png" width="410" alt="天气"><br>
+  <b>⛅ 天气</b><br>
+  <sub>多地点实况 + 未来 3 天预报（温度区间渐变条），数据源和风天气；支持区县搜索与镇 / 街道手动经纬度。</sub>
+</td>
+</tr>
+</table>
+
+<div align="center">
+  <img src="docs/img/module-gym.png" width="760" alt="健身记录"><br>
+  <b>💪 健身记录</b> · <sub>按动作记每日多组「重量×组数×次数」+ 选填 RPE；连续天数 🔥 / 历史总次数 / PR + 负重 e1RM 力量估算 + 每卡进步趋势小图。</sub>
+</div>
+
+---
+
+## 🧩 主页配套小组件
+
+<table>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-time-progress.png" width="410" alt="时间进度"><br>
+  <b>📅 时间进度</b><br>
+  <sub>年 / 月双卡：12 月份网格 + 日历 + 进度条 +「N 天剩余」，年蓝月金冷暖对比。</sub>
+</td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-recent-files.png" width="410" alt="最近修改"><br>
+  <b>📂 最近修改</b><br>
+  <sub>按修改时间排前 N（默认 8）+ 扩展名 tag + 一键隐私模式（●●●●）。</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-countdown.png" width="410" alt="项目倒计时"><br>
+  <b>⏳ 项目倒计时</b><br>
+  <sub>卡片网格 + SVG 进度环 + 加 / 删 / 二次确认，临近变橙、到期变红。</sub>
+</td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-pinned-notes.png" width="410" alt="常用笔记"><br>
+  <b>📌 常用笔记</b><br>
+  <sub>固定笔记列表，list / grid 双视图；添加走模糊搜索选择器，无需手打路径。</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-greeting.png" width="410" alt="问候 + 名言"><br>
+  <b>👋 问候 + 名言</b><br>
+  <sub>时段问候（早 / 午 / 下午 / 晚 / 夜）+ 日期 + 每日轮播名言。</sub>
+</td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-vault-stats.png" width="410" alt="仓库统计"><br>
+  <b>📊 仓库统计</b><br>
+  <sub>笔记总数 / 画布数 / 本月修改 / 本周修改，4 张大数字卡。</sub>
+</td>
+</tr>
+</table>
+
+<div align="center">
+  <img src="docs/img/module-quick-commands.png" width="600" alt="快捷命令"><br>
+  <b>⚡ 快捷命令</b> · <sub>一键执行任意 Obsidian 命令的按钮行（如笔记同步、全局搜索、命令面板）。</sub>
+</div>
+
+---
+
+## 🔌 插件级功能（不写代码块，设置里开关）
+
+- **Ctrl + 滚轮缩放整个 UI** —— 补回 Obsidian 老版本的滚轮缩放（`Ctrl + 0` 复位）。仅桌面端。
+- **番茄状态栏指示器** —— 底部状态栏一眼可见番茄进度，点击 = 开始 / 暂停 / 继续。仅桌面端。
+- **阅读体验：图片对齐 + 页面行宽** —— 可选图片对齐（左 / 中 / 右）+ 自定义行宽，覆盖阅读 + 编辑模式。默认零影响。
 
 ---
 
@@ -41,13 +175,7 @@
 
 ---
 
-> 当前版本 **v1.5.0**：**17 个模块** + 3 个插件级功能（Ctrl + 滚轮缩放 / 番茄状态栏 / 阅读体验）。
-> **v0.15.0 新增**：日记「💧 喝水打卡」—— 早/中/晚各 2 杯，今天卡片当前时段高亮提示。
-> **v0.15.1**：time-progress 模块视觉重做（hero stat 大数字 + 左侧渐变 accent）。
-> **主页升级为独立 ItemView**（桌面端底部状态栏「🏠 主页」/ 移动端 ribbon /
-> 命令「打开主页」），铺满面板不再受可读行宽限制；一键应用推荐布局（10 个常用模块），开机即用。
-
-## 安装（通过 BRAT）
+## 📦 安装（通过 BRAT）
 
 本插件未上架社区市场，用 [BRAT](https://github.com/TfTHacker/obsidian42-brat) 安装与自动更新：
 
@@ -60,7 +188,7 @@
 
 之后每次发布新版本，BRAT 会在所有设备上自动更新。
 
-## 使用
+## 🚀 使用
 
 在任意笔记里写一个代码块，语言写 `homepage`，第一行写模块 id：
 
@@ -70,64 +198,35 @@ diary
 ```
 ````
 
-## 内置模块（15 个）
+把多个模块拼成一张主页：桌面端点底部状态栏「🏠 主页」/ 移动端点左侧 ribbon /
+命令「打开主页」，即可打开独立的主页标签页，铺满面板。首次打开可一键应用推荐布局；
+编辑模式下 ↑↓ 调位置 / ▢▭ 切单列整行 / ⇕ 切跨行高度 / + 添加模块 / 切 1·2·3 列。
 
-**主页 / 聚合**：
+每个模块头部都有「📖 说明」按钮，点开即是该模块的完整用法。
 
-| 模块 id | 名称 | 一句话 |
-|---|---|---|
-| `home` | 主页 | 用 grid 布局把多个模块组合到一张主页。**两种打开方式：独立标签页（推荐，桌面端点底部状态栏「🏠 主页」/ 移动端点左侧 ribbon / 命令「打开主页」，铺满面板）+ 代码块版（嵌入笔记，受可读行宽限制）**。首次打开可一键应用推荐布局；编辑模式 ↑↓ 调位置 / ▢▭ 切单列整行 / + 添加模块 / 列数 1/2/3 |
+### 模块 id 一览
 
-**业务模块**：
+| 模块 id | 名称 | 模块 id | 名称 |
+|---|---|---|---|
+| `home` | 主页（聚合） | `diary` | 日记记录 |
+| `vocab` | 背单词 | `todo` | 待办看板 |
+| `pomodoro` | 番茄专注 | `discipline` | 自律打卡 |
+| `psyche` | 精神内核 | `weather` | 天气 |
+| `gym` | 健身记录 | `project-log` | 项目日志 |
+| `greeting` | 问候 + 名言 | `vault-stats` | 仓库统计 |
+| `time-progress` | 时间进度 | `countdown` | 项目倒计时 |
+| `pinned-notes` | 常用笔记 | `recent-files` | 最近修改 |
+| `quick-commands` | 快捷命令 | | |
 
-| 模块 id | 名称 | 一句话 |
-|---|---|---|
-| `diary` | 日记记录 | 每日 4 个手动数字（体重 / 睡眠 / 工作 / 健身）+ **💧 喝水打卡（早/中/晚各 2 杯，今天卡片当前时段高亮提示）** + 时间段日志 + 周/月视图与汇总 |
-| `vocab` | 背单词 | FSRS-6 间隔重复 + ECDICT 离线中文词库查词 + 派生词 / 词族关联 + 复习弹窗 |
-| `todo` | 待办看板 | 当前聚焦 + 今日待办 + 项目追踪三层（项目→任务→子任务），支持派单同步 |
-| `pomodoro` | 番茄专注 | 时间戳法防崩溃计时（关 Obsidian 不丢进度）+ 桌面悬浮窗（始终置顶，可切迷你模式）+ 全年热力 + 历史可单条删除 |
-| `discipline` | 自律打卡 | 要做 / 限额 / 戒断 三类，按类型分组 + 组内 ↑↓ + 周视图 + 顶部三卡汇总 + 7 天迷你热力 + 单项 📊 全年热力 + 自定义指标（跑步距离 / 配速 / 用时） |
-| `psyche` | 精神内核 | SVG 自动布局的价值观 / 原则树（替代手画 Canvas）。多根 + 「层」分组 + 横纵向布局 + 笔记 wikilink |
-| `weather` | 天气 | 多地点实况 + 未来 3 天预报（温度区间渐变条），数据源和风天气 QWeather；支持区县搜索 + 镇/街道手动经纬度 |
-| `gym` | 健身记录 | 按动作记每日多组「重量×组数×次数」+ 选填 RPE；连续天数 🔥 / 历史总次数 / PR + 负重 e1RM 力量估算（Epley）+ 每卡进步趋势小图；徒手·负重动作管理 |
-| `project-log` | 项目日志 | 项目→主题→每日条目三级管理；三视图（折叠日志 / 热力图 / 甘特泳道）；主题时间区间自动推导，重叠=并行；多项目 + work.md 文本一键导入 |
+---
 
-**主页配套小模块**（v0.12.0 新增）：
-
-| 模块 id | 名称 | 一句话 |
-|---|---|---|
-| `greeting` | 问候 + 名言 | 时段问候（早/午/下午/晚/夜）+ 日期 + 每日轮播 7 句名言 |
-| `vault-stats` | 仓库统计 | 笔记总数 / 画布数 / 本月修改 / 本周修改，4 张大数字卡 |
-| `time-progress` | 时间进度 | 年/月双卡：12 月份网格 + 日历 + 进度条 + 「N 天剩余」 |
-| `countdown` | 项目倒计时 | 卡片网格 + SVG 进度环 + 加/删/二次确认，临近变橙、到期变红 |
-| `pinned-notes` | 常用笔记 | 固定笔记列表，list / grid 双视图（`style: grid` 切换）；添加走模糊搜索选择器，无需手打路径 |
-| `recent-files` | 最近修改 | mtime 排前 N（默认 8）+ 扩展名 tag + 隐私模式（一键 ●●●●） |
-| `quick-commands` | 快捷命令 | 一键执行 Obsidian command id 的按钮行（如同步笔记） |
-
-每个模块头部有「📖 说明」按钮，点开即是该模块的完整用法。
-
-## 插件级功能
-
-除了上面 17 个 `homepage` 代码块模块，还有 3 个全局 UI 功能（不需要写代码块，
-在「设置 → Homepage Modules」里开关）：
-
-- **Ctrl + 滚轮缩放整个 UI**（v0.9.5）：补回 Obsidian 老版本的滚轮缩放，调
-  Electron `webFrame.setZoomLevel`。Canvas / PDF 视图保留原生缩放、不被拦截。
-  默认快捷键 `Ctrl + 0` 复位。仅桌面端。
-- **番茄状态栏指示器**（v0.9.6）：底部状态栏一眼可见当前番茄进度，空闲
-  「🍅 25m」/ 运行「🍅 21:30」/ 暂停「🍅 21:30 ⏸」，点击 = 开始 / 暂停 / 继续。
-  与代码块、悬浮窗共用同一引擎、实时同步。仅桌面端。
-- **阅读体验：图片对齐 + 页面行宽**（v0.14.0）：「设置 → 阅读体验」可选图片对齐
-  （不接管 / 居左 / 居中 / 居右，覆盖阅读 + 编辑模式）+ 行宽 rem（覆盖 Obsidian 的
-  `--file-line-width`，0 = 不接管）。默认零影响。
-
-## 多设备同步保护
+## 🔒 多设备同步保护
 
 数据存 vault 内 `.md` 文件，可见、可 git、卸载后仍在。多设备同步（remotely-save 等）
 场景下接入了「新设备保护门」：数据文件不存在且本会话未确认时，模块不渲染可编辑界面，
 显示保护提示 + 「重新检查 / 全新开始」，避免新设备造冲突文件覆盖真实数据。
 
-## 平台
+## 📱 平台
 
 桌面端与移动端（iOS / Android）均可用。悬浮窗 / 状态栏 / 滚轮缩放等桌面专属功能
 在移动端自动跳过、不影响其它模块加载。
@@ -135,3 +234,5 @@ diary
 ---
 
 作者：雪天鱼 · MIT License
+
+> 注：文档中的截图为演示数据，安装后所有数据均来自你自己的 vault。
