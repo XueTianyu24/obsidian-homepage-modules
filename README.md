@@ -189,6 +189,19 @@
 
 之后每次发布新版本，BRAT 会在所有设备上自动更新。
 
+### 🔑 BRAT 提示 GitHub API rate limit 怎么办
+
+BRAT 检查更新要调 GitHub 接口，**不登录时匿名限额只有 60 次/小时**（按 IP 算）。装的 beta 插件一多、或频繁点检查更新，就容易撞到 `GitHub API rate limit` 报错。配一个 GitHub **Personal Access Token（PAT）** 认证后，限额升到 **5000 次/小时**，基本一劳永逸：
+
+1. 打开 GitHub → 右上头像 → **Settings → Developer settings → Personal access tokens**，生成一个 token（**Tokens (classic)** 或 **Fine-grained tokens** 都行）
+2. **装公开插件无需任何权限**：classic token **不用勾选任何 scope**；fine-grained 选 **Public Repositories（read-only）** 即可。token 只用于认证身份、提高限额，不需要写权限
+3. 建议设个**过期时间**（别选 No Expiration）；生成后**立刻复制**（离开页面就不再显示）
+4. 回到 Obsidian → **设置 → BRAT → 填进「Personal Access Token」字段**，填完会自动校验有效性
+
+> 💡 生成 token 时 GitHub 可能要求用 **密码 / 两步验证 / Passkey（通行密钥——指纹、面容或设备 PIN）** 再确认一次身份，这是它的安全步骤，按提示验证即可（不想用 Passkey 可点验证框里的「用其他方式验证」切回密码）。
+>
+> ⚠️ token 等同密码：**存进密码管理器、不要外泄、不要提交进任何仓库**。过期后限额会掉回 60，重新生成换上即可。
+
 ## 🚀 使用
 
 在任意笔记里写一个代码块，语言写 `homepage`，第一行写模块 id：
