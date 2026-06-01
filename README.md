@@ -74,6 +74,14 @@
   <sub>多地点实况 + 未来 3 天预报（温度区间渐变条），数据源和风天气；支持区县搜索与镇 / 街道手动经纬度。</sub>
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+  <img src="docs/img/module-prompts.png" width="410" alt="提示词库"><br>
+  <b>💬 提示词库</b><br>
+  <sub>常用 AI 提示词分标签管理：搜索 / 标签筛选 / 收藏置顶，一键复制原文直接喂给 ChatGPT / Claude / Agent。</sub>
+</td>
+<td width="50%" valign="top"></td>
+</tr>
 </table>
 
 <div align="center">
