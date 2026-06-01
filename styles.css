@@ -19,3 +19,15 @@
   width: 96vw;
   max-width: 96vw;
 }
+
+/* 项目日志「项目须知」内嵌 Markdown 渲染：收紧卡片内首尾与块间距 */
+.homepage-note-md > *:first-child { margin-top: 0; }
+.homepage-note-md > *:last-child { margin-bottom: 0; }
+.homepage-note-md p { margin: 0.4em 0; }
+.homepage-note-md ul,
+.homepage-note-md ol { margin: 0.3em 0; padding-left: 1.4em; }
+.homepage-note-md h1,
+.homepage-note-md h2,
+.homepage-note-md h3,
+.homepage-note-md h4 { margin: 0.5em 0 0.3em; }
+.homepage-note-md ul.contains-task-list { padding-left: 0.6em; }
