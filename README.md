@@ -30,7 +30,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-todo.png" width="410" alt="待办看板"><br>
   <b>✅ 待办看板</b><br>
-  <sub>当前聚焦 + 今日待办 + 项目追踪三层（项目→任务→子任务），项目可「派单」到今日待办双向同步。</sub>
+  <sub>当前聚焦 + 今日待办 + 长期任务（起止时间 + 倒计时）+ 项目追踪三层，项目可「派单」到今日待办双向同步。</sub>
 </td>
 <td width="50%" valign="top">
   <img src="docs/img/module-pomodoro.png" width="410" alt="番茄专注"><br>
