@@ -252,7 +252,7 @@ diary
 | `time-progress` | 时间进度 | `countdown` | 项目倒计时 |
 | `pinned-notes` | 常用笔记 | `recent-files` | 最近修改 |
 | `quick-commands` | 快捷命令 | `prompts` | 提示词库 |
-| `principles` | 个人信条 | `deadlines` | 学术会议 DDL |
+| `principles` | 个人信条 | `deadlines` | 学术会议 / 期刊 DDL |
 
 ---
 
