@@ -1,7 +1,7 @@
 # Homepage Modules
 
 一个可扩展的 **Obsidian 个人主页插件** —— 用一个 `homepage` 代码块，渲染日记、待办、
-番茄、自律、健身、天气、统计、倒计时等 **19 个交互模块**；再用「主页」把它们拼成一张
+番茄、自律、健身、天气、会议 DDL、统计、倒计时等 **20 个交互模块**；再用「主页」把它们拼成一张
 开箱即用的个人仪表盘。一个插件容纳多个模块，新增模块互不干扰，零主题依赖。
 
 <div align="center">
@@ -252,7 +252,7 @@ diary
 | `time-progress` | 时间进度 | `countdown` | 项目倒计时 |
 | `pinned-notes` | 常用笔记 | `recent-files` | 最近修改 |
 | `quick-commands` | 快捷命令 | `prompts` | 提示词库 |
-| `principles` | 个人信条 | | |
+| `principles` | 个人信条 | `deadlines` | 学术会议 DDL |
 
 ---
 
