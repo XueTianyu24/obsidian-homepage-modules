@@ -89,6 +89,11 @@
 </table>
 
 <div align="center">
+  <img src="docs/img/module-deadlines.png" width="760" alt="学术会议 / 期刊 DDL"><br>
+  <b>📅 学术会议 / 期刊 DDL</b> · <sub>会议：ccfddl 同步 + 倒计时 + 时区换算 + 临近提醒；期刊：内置 13 个微电子 / EDA 刊的 CCF + 中科院分区 + IF + 投稿周期（🏛 官方 / 💬 网友双口径）+ 官网直达。</sub>
+</div>
+
+<div align="center">
   <img src="docs/img/module-gym.png" width="760" alt="健身记录"><br>
   <b>💪 健身记录</b> · <sub>按动作记每日多组「重量×组数×次数」+ 选填 RPE；连续天数 🔥 / 历史总次数 / PR + 负重 e1RM 力量估算 + 每卡进步趋势小图。</sub>
 </div>
