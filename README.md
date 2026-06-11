@@ -30,7 +30,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-todo.png" width="410" alt="待办看板"><br>
   <b>✅ 待办看板</b><br>
-  <sub>当前聚焦 + 今日待办 + 长期任务（起止 + 倒计时）+ 周·月计划（目标 + 复盘 + 自动归档）+ 项目追踪三层，项目可「派单」到今日待办双向同步。</sub>
+  <sub>当前聚焦 + 今日待办（列表 / 四象限两视图）+ 长期任务（起止 + 倒计时）+ 周·月计划（目标 + 复盘 + 自动归档）+ 项目追踪三层，项目可「派单」到今日待办双向同步。</sub>
 </td>
 <td width="50%" valign="top">
   <img src="docs/img/module-pomodoro.png" width="410" alt="番茄专注"><br>
@@ -92,7 +92,11 @@
   <b>📆 每日安排</b><br>
   <sub>一天的固定作息骨架：时间段排成比例时间轴，当前块高亮 + 按进度填充；「现在」卡大字提醒该做什么 / 还剩多久 / 下一项预告；时段开始弹提醒，适用日支持工作日 / 周末两套作息。</sub>
 </td>
-<td width="50%" valign="top"></td>
+<td width="50%" valign="top">
+  <img src="docs/img/module-todo-matrix.png" width="410" alt="待办四象限"><br>
+  <b>🧮 待办 · 四象限</b><br>
+  <sub>「今日待办」可切到艾森豪威尔四象限视图：按重要 / 紧急把待办分到 2×2 四格，未分类的待在「收集箱」；点色点或拖进格子即归类，帮你决定先做什么。</sub>
+</td>
 </tr>
 </table>
 
