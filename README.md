@@ -62,7 +62,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-project-log.png" width="410" alt="项目日志"><br>
   <b>📈 项目日志</b><br>
-  <sub>项目→主题→每日条目三级管理 + 项目须知(Markdown) + 待办清单；四视图（折叠日志 / 按天 / 热力图 / 甘特泳道），主题区间自动推导，重叠即并行。</sub>
+  <sub>项目→主题→每日条目三级管理 + 项目须知(Markdown) + 待办清单；四视图（折叠日志 / 按天 / 热力图 / 甘特泳道），主题区间自动推导，重叠即并行。主题多时顶部有<b>🗂 主题目录</b>点击跳转 + 全部展开 / 折叠成大纲。</sub>
 </td>
 <td width="50%" valign="top">
   <img src="docs/img/module-psyche.png" width="410" alt="精神内核"><br>
