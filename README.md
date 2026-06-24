@@ -79,7 +79,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-vocab.png" width="410" alt="背单词"><br>
   <b>📖 背单词</b><br>
-  <sub>FSRS-6 间隔重复（Anki 同款调度）+ ECDICT 离线中文词库查词 + 词族关联 + 形近词自动辨析（archive/architect 这类易混词自动聚合）+ 复习弹窗。</sub>
+  <sub>FSRS-6 间隔重复（Anki 同款调度）+ ECDICT 离线中文词库查词 + 词族关联 + 形近词自动辨析（archive/architect 这类易混词自动聚合）+ 复习弹窗。<b>单词列表为紧凑行 + 点击展开详情，可按首字母分组 + A-Z 索引快速查找</b>。</sub>
 </td>
 </tr>
 <tr>
