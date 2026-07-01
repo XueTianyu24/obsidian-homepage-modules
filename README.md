@@ -232,7 +232,7 @@
 - **阅读体验：图片对齐 + 页面行宽 + 去嵌入竖条** —— 可选图片对齐（左 / 中 / 右）+ 自定义行宽 + 去掉 `![[...]]` 嵌入笔记的左侧竖条（阅读视图 + 导出 PDF 同时生效）。默认零影响。
 - **一键打开文档组** —— 右下角状态栏「📂 工具组」按钮点一下打开你预设的一组常用文档（各成标签页），快速恢复阅读布局；已打开的不重复开。设置里用文件选择器配置 + 排序。仅桌面端。
 - **PDF 导出增强** —— 导出 PDF 时让**表格不跨页**（纵向：整张尽量落一页，放不下的大表保证「行不腰斩 + 表头每页重复」）+ **宽表适应页宽**（横向：太宽的表不裁右侧列、单元格内容自动换行，可再选字体缩放），可选 callout / 代码块 / 图片也不跨页；命令「插入 PDF 目录页」给当前笔记插入一段**「隐身目录」**——平时在编辑/阅读视图隐藏、不碍眼，**导出 PDF 时自动显示**成一页目录（供读者看全文章节结构，`[[#标题]]` + 层级缩进），一次插入、以后每次导出都自动带，「移除 PDF 目录页」彻底撤掉。设置里配目录标题 / 收录层级 / 是否单独成页。注：受 Obsidian 原生导出限制，PDF 里目录项不可点击跳转、也不生成 PDF 书签（Obsidian 老限制）。
-- **外观主题：全局换肤** —— 「设置 → 外观主题」一键开启，用内置的一套自定义外观给整个 Obsidian 换肤、关闭切回原主题。冷色沉静风（呼应插件的 NORD 配色），保留描边卡片质感，并关掉了重度毛玻璃换纯色卡片——**更清爽、滚动顺滑**。内置 **5 套大牌配色**（Catppuccin / Tokyo Night / Rosé Pine / Everforest / Nord，全部官方色值、暗色 + 亮色都有），点色块即时整套换肤，还能直接切 ☀️ 亮 / 🌙 暗。另有 **4 套样式预设**（标准 / 圆润立体 / 锐利紧凑 / 极简沉浸），和配色自由组合。走 Obsidian 原生主题机制，不和你当前主题冲突。基于开源主题 Border（© 2022 Akifyss · MIT）定制。
+- **外观主题：全局换肤** —— 「设置 → 外观主题」一键开启，用内置的一套自定义外观给整个 Obsidian 换肤、关闭切回原主题。冷色沉静风（呼应插件的 NORD 配色），保留描边卡片质感，并关掉了重度毛玻璃换纯色卡片——**更清爽、滚动顺滑**。内置 **10 套大牌配色**（Catppuccin / Tokyo Night / Rosé Pine / Everforest / Nord / Gruvbox / Dracula / Solarized / Kanagawa / One Dark，全部官方色值、多数暗色 + 亮色都有），点色块即时整套换肤，还能直接切 ☀️ 亮 / 🌙 暗。另有 **4 套样式预设**（标准 / 圆润立体 / 锐利紧凑 / 极简沉浸），和配色自由组合。走 Obsidian 原生主题机制，不和你当前主题冲突。基于开源主题 Border（© 2022 Akifyss · MIT）定制。
 
 <p align="center">
   <img src="docs/img/appearance-compare.png" width="820" alt="外观主题 before/after 对比"><br>
@@ -240,9 +240,9 @@
 </p>
 
 <p align="center">
-  <img src="docs/img/appearance-palettes-dark.png" width="820" alt="5 套配色 · 暗色"><br>
-  <img src="docs/img/appearance-palettes-light.png" width="820" alt="5 套配色 · 亮色"><br>
-  <sub><b>5 套大牌配色任选</b>（图示 Catppuccin · Tokyo Night · Rosé Pine · Everforest，另含 Nord）· 暗色 + 亮色都有 · 「设置 → 外观主题」点色块即时整套换肤</sub>
+  <img src="docs/img/appearance-palettes-dark.png" width="820" alt="配色 · 暗色"><br>
+  <img src="docs/img/appearance-palettes-light.png" width="820" alt="配色 · 亮色"><br>
+  <sub><b>10 套大牌配色任选</b>（Catppuccin · Tokyo Night · Rosé Pine · Everforest · Nord · Gruvbox · Dracula · Solarized · Kanagawa · One Dark，图示其中几套）· 暗色 + 亮色都有 · 「设置 → 外观主题」点色块即时整套换肤</sub>
 </p>
 
 <p align="center">
