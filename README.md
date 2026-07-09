@@ -74,7 +74,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-diary.png" width="410" alt="日记记录"><br>
   <b>📔 日记记录</b><br>
-  <sub>每日体重 / 睡眠 / 工作 / 健身 4 个数字 + 💧 喝水打卡（早中晚各 2 杯）+ 时间段日志 + 周 / 月视图与汇总。</sub>
+  <sub><b>⭐ 每日打分（0–10）+ 月度热力日历</b>：点日期格子打分、按月切换、三档配色（🟥差 🟨中 🟩好）、右栏当月日均 + 分布。另有每日体重 / 睡眠 / 工作 / 健身 4 个数字 + 💧 喝水打卡（早中晚各 2 杯）+ 时间段日志 + 周 / 月视图与汇总。</sub>
 </td>
 <td width="50%" valign="top">
   <img src="docs/img/module-vocab.png" width="410" alt="背单词"><br>
