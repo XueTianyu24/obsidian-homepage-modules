@@ -132,7 +132,7 @@
 
 <div align="center">
   <img src="docs/img/module-workout.png" width="620" alt="健身日记"><br>
-  <b>📔 健身日记</b> · <sub>以「天」为中心的徒手训练打卡：每天填各动作总次数（垂直举腿 30 / 俯卧撑 20 / 深蹲 40…），选时间段看<b>多动作锻炼曲线</b> + 每个动作的<b>单日峰值</b>及达成日 + GitHub 风格坚持度热力图。与「健身记录」按动作撸铁互补。</sub>
+  <b>📔 健身日记</b> · <sub>以「天」为中心的徒手训练打卡：每天填各动作总次数（垂直举腿 30 / 俯卧撑 20 / 深蹲 40…）。<b>📊 累计总览</b>：从开始到今天（可按年份）的坚持天数 + 累计总次数 + 每个动作累计。选时间段看<b>多动作锻炼曲线</b> + 每个动作的<b>单日峰值</b>及达成日 + <b>月历热力图</b>（格子显日期、一眼看哪天练了）。与「健身记录」按动作撸铁互补。</sub>
 </div>
 
 <div align="center">
@@ -178,7 +178,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-countdown.png" width="410" alt="项目倒计时"><br>
   <b>⏳ 项目倒计时</b><br>
-  <sub>卡片网格 + SVG 进度环 + 加 / 删 / 二次确认，临近变橙、到期变红。</sub>
+  <sub>卡片网格 + SVG 进度环 + 加 / 删 / 二次确认，<b>点卡片日期行就地改起止日期 / 名称</b>，临近变橙、到期变红。</sub>
 </td>
 <td width="50%" valign="top">
   <img src="docs/img/module-pinned-notes.png" width="410" alt="常用笔记"><br>
