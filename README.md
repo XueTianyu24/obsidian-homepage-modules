@@ -1,7 +1,7 @@
 # Homepage Modules
 
 一个可扩展的 **Obsidian 个人主页插件** —— 用一个 `homepage` 代码块，渲染日记、待办、
-番茄、自律、健身、精听听写、词根词缀、词组、账号密码、天气、会议 DDL、每日安排、日历、统计、倒计时等 **27 个交互模块**；再用「主页」把它们拼成一张
+番茄、自律、健身、精听听写、词根词缀、词组、账号密码、天气、会议 DDL、每日安排、日历、统计、倒计时等 **26 个交互模块**；再用「主页」把它们拼成一张
 开箱即用的个人仪表盘。一个插件容纳多个模块，新增模块互不干扰，零主题依赖。
 
 <div align="center">
@@ -126,13 +126,13 @@
 </div>
 
 <div align="center">
-  <img src="docs/img/module-gym.png" width="760" alt="健身记录"><br>
-  <b>💪 健身记录</b> · <sub>按动作记每日多组「重量×组数×次数」+ 选填 RPE；连续天数 🔥 / 历史总次数 / PR + 负重 e1RM 力量估算 + 每卡进步趋势小图。</sub>
+  <img src="docs/img/module-workout.png" width="620" alt="健身日记"><br>
+  <b>📔 健身日记</b> · <sub>以「天」为中心的训练打卡：每天按<b>组记录</b>各动作（组数 × 次/组，负重动作可加 kg、选填 RPE）。<b>📊 累计总览</b>：从开始到今天（可按年份）的坚持天数 + 累计总次数 + 每个动作累计 + <b>全年热力图</b>（GitHub 式 52 周网格，一屏看一整年哪些天练了）。选时间段看<b>多动作锻炼曲线</b> + 每个动作的<b>单日峰值</b>及达成日 + 月历锻炼日历。</sub>
 </div>
 
 <div align="center">
-  <img src="docs/img/module-workout.png" width="620" alt="健身日记"><br>
-  <b>📔 健身日记</b> · <sub>以「天」为中心的徒手训练打卡：每天填各动作总次数（垂直举腿 30 / 俯卧撑 20 / 深蹲 40…）。<b>📊 累计总览</b>：从开始到今天（可按年份）的坚持天数 + 累计总次数 + 每个动作累计。选时间段看<b>多动作锻炼曲线</b> + 每个动作的<b>单日峰值</b>及达成日 + <b>月历热力图</b>（格子显日期、一眼看哪天练了）。与「健身记录」按动作撸铁互补。</sub>
+  <img src="docs/img/module-workout-ex.png" width="620" alt="健身日记 · 动作卡"><br>
+  <b>🏋️ 健身日记 · 动作卡</b> · <sub>每个动作一张长期档案卡：历史总次数 / 连续天数 🔥 / <b>单次最高</b>（一组不间断做的最多次数）/ <b>单日最高</b>（含当天组构成，如 1×50 2×20 = 90）；负重动作显示<b>最大重量 PR + e1RM 力量估算</b>；「努力量」进步趋势小图 + 今日组摘要。原「健身记录」模块已并入本模块，旧数据可在「⚙ 管理动作」一键无损迁入（含重量 / RPE）。</sub>
 </div>
 
 <div align="center">
@@ -386,7 +386,7 @@ diary
 | `vocab` | 背单词 | `todo` | 待办看板 |
 | `pomodoro` | 番茄专注 | `discipline` | 自律打卡 |
 | `psyche` | 精神内核 | `weather` | 天气 |
-| `gym` | 健身记录 | `project-log` | 项目日志 |
+| `project-log` | 项目日志 | `vault-accounts` | 账号密码 |
 | `greeting` | 问候 + 名言 | `vault-stats` | 仓库统计 |
 | `time-progress` | 时间进度 | `countdown` | 项目倒计时 |
 | `pinned-notes` | 常用笔记 | `recent-files` | 最近修改 |
@@ -395,7 +395,6 @@ diary
 | `schedule` | 每日安排 | `calendar` | 日历日程 |
 | `workout` | 健身日记 | `dictation` | 精听听写 |
 | `morph` | 词根词缀 | `vocab-groups` | 词组 |
-| `vault-accounts` | 账号密码 |  |  |
 
 ---
 
