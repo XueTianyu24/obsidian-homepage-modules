@@ -31,3 +31,19 @@
 .homepage-note-md h3,
 .homepage-note-md h4 { margin: 0.5em 0 0.3em; }
 .homepage-note-md ul.contains-task-list { padding-left: 0.6em; }
+
+/* 专注规划「周计划」内嵌 Live Preview 编辑器：加粗在编辑态也显示为淡粉红（与预览态一致） */
+.homepage-plan-editor .cm-strong {
+  color: #f7abc6;
+  font-weight: 700;
+}
+.theme-light .homepage-plan-editor .cm-strong {
+  color: #d16d96;
+}
+/* 高光 <mark> 在编辑态也用深色字 + 圆角小色块（与预览态 stylePlanMd 一致；
+   否则暗色主题下编辑器只应用了淡背景、文字仍是默认浅色，淡背景配浅字看不清） */
+.homepage-plan-editor mark {
+  color: #40303a !important;
+  padding: 0 5px;
+  border-radius: 5px;
+}
