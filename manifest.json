@@ -1,7 +1,7 @@
 {
   "id": "homepage-modules",
   "name": "Homepage Modules",
-  "version": "1.70.0",
+  "version": "1.71.0",
   "minAppVersion": "1.4.0",
   "description": "可扩展的个人主页模块集合：用 ```homepage 代码块渲染日记、待办等交互模块。新增模块只需往 src/modules 加一个文件。",
   "author": "雪天鱼",
