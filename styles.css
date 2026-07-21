@@ -47,3 +47,50 @@
   padding: 0 5px;
   border-radius: 5px;
 }
+
+/* 画布思维导图：节点自动布局时的短过渡动画（Canvas 节点用 transform 定位） */
+.mindvas-animating {
+  transition: transform 0.3s ease;
+}
+
+/* 画布思维导图：子树折叠 —— 渲染层隐藏（节点 + 连线；插件卸载此规则消失、全部复原可见） */
+.hpm-canvas-collapse-hidden {
+  display: none !important;
+}
+
+/* 折叠角标：挂在节点分支侧、垂直居中常显；– = 折叠、＋N = 展开 N 个子节点 */
+.hpm-collapse-badge {
+  position: absolute;
+  top: 50%;
+  right: -26px;
+  transform: translateY(-50%);
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 1;
+  background: var(--background-primary);
+  color: var(--text-muted);
+  border: 1px solid var(--background-modifier-border-hover);
+  cursor: pointer;
+  z-index: 20;
+  user-select: none;
+}
+.hpm-collapse-badge.is-left {
+  right: auto;
+  left: -26px;
+}
+.hpm-collapse-badge:hover {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
+.hpm-collapse-badge.is-collapsed {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-color: var(--interactive-accent);
+}
