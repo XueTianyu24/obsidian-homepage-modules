@@ -1,9 +1,9 @@
 {
   "id": "homepage-modules",
-  "name": "Homepage Modules",
-  "version": "1.79.1",
+  "name": "万象",
+  "version": "1.80.0",
   "minAppVersion": "1.4.0",
-  "description": "可扩展的个人主页模块集合：用 ```homepage 代码块渲染日记、待办等交互模块。新增模块只需往 src/modules 加一个文件。",
+  "description": "包罗万象的个人管理套件：日记、待办、番茄专注、背单词、健身、求职进度等 31 个交互模块 + 全屏工作台，用 ```homepage 代码块随处嵌入。",
   "author": "雪天鱼",
   "isDesktopOnly": false
 }
