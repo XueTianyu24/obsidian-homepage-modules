@@ -91,7 +91,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-discipline.png" width="410" alt="自律打卡"><br>
   <b>🎯 自律打卡</b><br>
-  <sub>要做 / 限额 / 戒断 三类约束，按类型分组 + 周视图 + 顶部三卡汇总 + 7 天迷你热力 + 自定义指标（跑步距离 / 配速 / 用时）。</sub>
+  <sub>要做 / 限额 / 戒断 三类约束，按类型分组 + 周视图 + 顶部三卡汇总 + 7 天迷你热力 + 自定义指标（跑步距离 / 配速 / 用时）。详情里还能<b>按月回看</b>：本月破戒 / 超标 / 活动几次、当月日历、12 个月趋势柱（点柱切月）+ 全年热力图。</sub>
 </td>
 <td width="50%" valign="top">
   <img src="docs/img/module-weather.png" width="410" alt="天气"><br>
