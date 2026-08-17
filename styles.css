@@ -63,6 +63,36 @@ textarea.hpm-ph::placeholder {
   opacity: 1;
 }
 
+/* 可编辑 Markdown 块的紧凑排版：时间轴这类「一屏扫全天」的小卡片里，
+   默认的段落 / 列表间距会让两三条事项就占满一屏。
+   ⚠️ 只收**纵向**间距，绝不用 `margin: .1em 0` 这种简写 —— 简写会把左右 margin 一并
+   置 0，而 Obsidian 的任务列表勾选框靠 li 的负左 margin 定位，一置 0 就被挤出容器、
+   再被折叠容器的 overflow:hidden 裁掉 = 勾选框整个消失（实测踩过，看图才发现）。 */
+.homepage-note-md.hpm-md-compact p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.homepage-note-md.hpm-md-compact ul,
+.homepage-note-md.hpm-md-compact ol {
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+}
+.homepage-note-md.hpm-md-compact li {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+/* 可编辑 Markdown 块（core/md-block）的内嵌原生编辑器：让 CodeMirror 撑满外框。
+   不加这条时 .cm-editor 只有一行文字高（实测 24px），外框剩下的高度是死区 ——
+   点进去看着是个多行框、点下半部却定位不出光标。
+   实际层级是 .hpm-md-editor > .markdown-source-view > .cm-editor（内嵌编辑器自己包了一层），
+   两层都得给 —— 只写直接子选择器 `> .cm-editor` 匹配不到，高度纹丝不动。 */
+.hpm-md-editor .markdown-source-view,
+.hpm-md-editor .cm-editor,
+.hpm-md-editor .cm-scroller {
+  min-height: var(--hpm-md-editor-min-h, 74px);
+}
+
 /* 画布思维导图：节点自动布局时的短过渡动画（Canvas 节点用 transform 定位） */
 .mindvas-animating {
   transition: transform 0.3s ease;
