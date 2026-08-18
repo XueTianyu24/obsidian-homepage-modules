@@ -50,7 +50,7 @@
 
 /* 模块内输入框的 placeholder 提示字：Obsidian 默认取 --text-faint，
    暗色主题下与模块里的半透明输入底色（T.inputBg = rgba(255,255,255,0.06)）对比过低、
-   基本看不见（曹少 2026-08-16 反馈健身日记「组 / 次 / kg / 备注」都读不出来）→ 提到 --text-muted。
+   基本看不见（2026-08-16 有用户反馈健身日记「组 / 次 / kg / 备注」都读不出来）→ 提到 --text-muted。
    显式 class 而非全局 input 选择器，避免波及 Obsidian 自身 UI。
    ⚠️ 选择器必须带 `input` / `textarea`：Obsidian app.css 里是
    `input[type="number"]::placeholder{color:var(--input-placeholder-color)}`（特异性 0,1,1），
