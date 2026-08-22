@@ -1,7 +1,7 @@
 {
   "id": "homepage-modules",
   "name": "万象",
-  "version": "1.87.0",
+  "version": "1.88.0",
   "minAppVersion": "1.4.0",
   "description": "包罗万象的个人管理套件：日记、待办、番茄专注、背单词、健身、求职进度等 31 个交互模块 + 全屏工作台，用 ```homepage 代码块随处嵌入。",
   "author": "雪天鱼",
