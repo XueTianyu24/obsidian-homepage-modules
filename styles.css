@@ -139,3 +139,30 @@ textarea.hpm-ph::placeholder {
   color: var(--text-on-accent);
   border-color: var(--interactive-accent);
 }
+
+/* 健身日记「记录流水」一行的宽 / 窄两种布局，用容器查询而不是 JS 量宽度：
+   手机、分栏、旋转、拖窗口都自动跟着走，不用重绘。
+   宽：日期 | 摘要 | 合计 | ▸ 一行；窄（容器 < 520px）：日期 …… 合计 ▸ 一行，摘要独占第二行。
+   摘要用紧凑文本不用胶囊 —— 一个胶囊就是一个盒子，窄屏下每个盒子各占一行，一天要滚半屏。 */
+.hpm-wk-list {
+  container-type: inline-size;
+}
+.hpm-wk-row {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 10px;
+}
+@container (max-width: 519px) {
+  .hpm-wk-row {
+    grid-template-columns: auto 1fr auto;
+    gap: 3px 8px;
+  }
+  .hpm-wk-row .hpm-wk-sum {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .hpm-wk-row .hpm-wk-total {
+    justify-self: end;
+  }
+}
