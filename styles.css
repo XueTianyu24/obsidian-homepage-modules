@@ -250,6 +250,28 @@ body.hpm-pomo-bar .workspace-tab-header-container,
 body.hpm-pomo-bar .view-header {
   display: none !important;
 }
+/* 主题常给悬浮窗加「卡片」外观（万象 / Border：工作区左右 16px 外边距、底部 16px
+ * 内边距、圆角 + 阴影伪元素），在一根 40px 的细条里就成了一圈粗边框、把数字挤没一半。
+ * 从窗口到计时条这一路容器全部清零；选择器叠 .is-popout-window 抬高优先级，
+ * 压得过主题里同样带 !important 的圆角规则。 */
+body.hpm-pomo-bar.is-popout-window .app-container,
+body.hpm-pomo-bar.is-popout-window .horizontal-main-container,
+body.hpm-pomo-bar.is-popout-window .workspace,
+body.hpm-pomo-bar.is-popout-window .workspace-split.mod-root,
+body.hpm-pomo-bar.is-popout-window .workspace-tabs,
+body.hpm-pomo-bar.is-popout-window .mod-root .workspace-tabs.mod-top > .workspace-tab-container,
+body.hpm-pomo-bar.is-popout-window .workspace-leaf,
+body.hpm-pomo-bar.is-popout-window .workspace-leaf-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+body.hpm-pomo-bar.is-popout-window .workspace::before,
+body.hpm-pomo-bar.is-popout-window .workspace::after {
+  display: none !important;
+}
 body.hpm-pomo-bar .hpm-pomo-bar-row {
   -webkit-app-region: drag;
 }
