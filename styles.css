@@ -241,3 +241,18 @@ body.hpm-hl-brushing .cm-content { cursor: copy; }
 .hpm-hlbar-custom input[type="color"] { width: 28px; height: 22px; padding: 0; border: none; background: none; cursor: pointer; }
 .hpm-hlbar-use { margin-left: auto; padding: 2px 8px; border-radius: 5px; cursor: pointer; color: var(--interactive-accent); }
 .hpm-hlbar-use:hover { background: var(--background-modifier-hover); }
+
+/* ── 番茄悬浮窗迷你细条（pomodoro-view.ts 给悬浮窗 body 挂 hpm-pomo-bar）──
+ * 藏掉 Obsidian 自带的窗口按钮 / 标签栏 / 视图标题栏，窗口里只剩计时条；
+ * 计时条整行顶替标签栏当窗口拖动区，按钮退出拖动区才点得动。 */
+body.hpm-pomo-bar .titlebar,
+body.hpm-pomo-bar .workspace-tab-header-container,
+body.hpm-pomo-bar .view-header {
+  display: none !important;
+}
+body.hpm-pomo-bar .hpm-pomo-bar-row {
+  -webkit-app-region: drag;
+}
+body.hpm-pomo-bar .hpm-pomo-bar-btn {
+  -webkit-app-region: no-drag;
+}
