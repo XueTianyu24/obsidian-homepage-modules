@@ -63,6 +63,16 @@ textarea.hpm-ph::placeholder {
   opacity: 1;
 }
 
+/* 健身日记组格：placeholder 显示的是「上次的值」，得和自己填的数一眼分开。
+   单靠 --text-muted 不够：nord 这类主题里它和正文色几乎一样（对比只有 1.17）。
+   → 斜体、细字（填的数是 600 粗）、--text-muted 打六折透明度，暗色 / 亮色下都还读得出。
+   比 .hpm-ph 多一个 class，特异性压过上面那条。 */
+input.hpm-ph.hpm-wk-hint::placeholder {
+  color: color-mix(in srgb, var(--text-muted) 60%, transparent);
+  font-style: italic;
+  font-weight: 400;
+}
+
 /* 可编辑 Markdown 块的紧凑排版：时间轴这类「一屏扫全天」的小卡片里，
    默认的段落 / 列表间距会让两三条事项就占满一屏。
    ⚠️ 只收**纵向**间距，绝不用 `margin: .1em 0` 这种简写 —— 简写会把左右 margin 一并
