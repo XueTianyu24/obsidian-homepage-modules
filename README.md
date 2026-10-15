@@ -79,7 +79,7 @@
 <td width="50%" valign="top">
   <img src="docs/img/module-diary.png" width="410" alt="日记记录"><br>
   <b>📔 日记记录</b><br>
-  <sub><b>📝 周总结 / 月总结</b>：周 / 月视图顶部就近写回顾，「📚 总结」tab 集中翻看，正文用 <b>Obsidian 原生编辑器（Live Preview 所见即所得）</b>。另有每日体重 / 睡眠 / 工作 / 健身 4 个数字 + 💧 喝水打卡（早中晚各 2 杯）+ 时间段日志 + 周 / 月视图与汇总。</sub>
+  <sub><b>📝 周总结 / 月总结</b>：周 / 月视图顶部就近写回顾，「📚 总结」tab 集中翻看，正文用 <b>Obsidian 原生编辑器（Live Preview 所见即所得）</b>。另有每日体重 / 睡眠 / 工作 / 健身 4 个数字 + 💧 喝水打卡（早中晚各 2 杯）+ 时间段日志（<b>每条记录支持 Markdown 和多行</b>：加粗、列表、<code>[[笔记]]</code> 可点跳转，复制来的多段文字粘进去换行不丢）+ 周 / 月视图与汇总。</sub>
 </td>
 <td width="50%" valign="top">
   <img src="docs/img/module-vocab.png" width="410" alt="背单词"><br>
