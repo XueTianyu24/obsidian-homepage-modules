@@ -20,6 +20,16 @@
   max-width: 96vw;
 }
 
+/* 自律打卡单项详情弹窗：比默认宽，月度的日历和统计能左右并排 */
+.homepage-discipline-detail {
+  width: 780px;
+  max-width: 92vw;
+}
+.is-phone .homepage-discipline-detail {
+  width: 96vw;
+  max-width: 96vw;
+}
+
 /* 项目日志「项目须知」内嵌 Markdown 渲染：收紧卡片内首尾与块间距 */
 .homepage-note-md > *:first-child { margin-top: 0; }
 .homepage-note-md > *:last-child { margin-bottom: 0; }
