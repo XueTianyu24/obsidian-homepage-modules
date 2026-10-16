@@ -30,6 +30,22 @@
   max-width: 96vw;
 }
 
+/* 日期框：Obsidian 桌面端把日历图标绝对定位在框内左侧，靠 padding-left 给它让位；
+ * 模块里写的内联 padding 会把这块让位盖掉，图标压住年份第一位。这里把让位补回来 */
+body:not(.is-ios):not(.is-android) input[type="date"]:not([disabled="true"]) {
+  padding-left: var(--size-4-6) !important;
+}
+
+/* 日记搜索弹窗 */
+.homepage-diary-search {
+  width: 640px;
+  max-width: 92vw;
+}
+.is-phone .homepage-diary-search {
+  width: 96vw;
+  max-width: 96vw;
+}
+
 /* 项目日志「项目须知」内嵌 Markdown 渲染：收紧卡片内首尾与块间距 */
 .homepage-note-md > *:first-child { margin-top: 0; }
 .homepage-note-md > *:last-child { margin-bottom: 0; }
