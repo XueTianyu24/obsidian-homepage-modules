@@ -322,3 +322,46 @@ body.hpm-pomo-bar .hpm-pomo-bar-row {
 body.hpm-pomo-bar .hpm-pomo-bar-btn {
   -webkit-app-region: no-drag;
 }
+
+/* ── 番茄专注面板（pomodoro.ts）：按模块自身宽度排版 ──
+ * 根元素 .hpm-pomo-root 是 inline-size 容器。窄（笔记里约 600 宽）依次往下排；
+ * 宽（工作台约 1300 宽）计时卡和统计左右并排，最近记录在下面通栏、分左右两列。 */
+.hpm-pomo-overview {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.hpm-pomo-hist-row {
+  border-bottom: 1px solid var(--hpm-pomo-div);
+}
+.hpm-pomo-hist-row:last-child {
+  border-bottom: none;
+}
+@container (max-width: 460px) {
+  .hpm-pomo-overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 16px !important;
+  }
+}
+@container (min-width: 960px) {
+  .hpm-pomo-layout {
+    display: grid;
+    grid-template-columns: minmax(460px, 5fr) 7fr;
+    column-gap: 20px;
+    align-items: start;
+  }
+  .hpm-pomo-col-hist {
+    grid-column: 1 / -1;
+  }
+  .hpm-pomo-hist-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(var(--hpm-pomo-rows), auto);
+    grid-auto-flow: column;
+  }
+  .hpm-pomo-hist-row[data-colend] {
+    border-bottom: none;
+  }
+  .hpm-pomo-hist-row[data-col="1"] {
+    border-left: 1px solid var(--hpm-pomo-div);
+  }
+}
