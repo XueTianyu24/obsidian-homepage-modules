@@ -211,6 +211,56 @@ input.hpm-ph.hpm-wk-hint::placeholder {
   }
 }
 
+/* 健身日记「🏋️ 动作」总览表：一行一个动作。
+   宽：动作 | 累计 | 近 30 天 | 纪录 | 上次 | 趋势 一行，表头标列名；
+   窄（容器 < 600px）：动作 + 趋势一行、四个数一行，表头藏起来、每格露出自己的小标签。 */
+.hpm-wo-ex {
+  container-type: inline-size;
+}
+.hpm-wo-ex-row {
+  display: grid;
+  grid-template-columns:
+    minmax(150px, 1.4fr) minmax(0, 1fr) minmax(0, 0.9fr)
+    minmax(0, 1.6fr) minmax(0, 1.3fr) minmax(80px, 1fr);
+  grid-template-areas: "name total recent rec last trend";
+  align-items: center;
+  column-gap: 14px;
+}
+.hpm-wo-ex-name { grid-area: name; }
+.hpm-wo-ex-total { grid-area: total; }
+.hpm-wo-ex-recent { grid-area: recent; }
+.hpm-wo-ex-rec { grid-area: rec; }
+.hpm-wo-ex-last { grid-area: last; }
+.hpm-wo-ex-trend { grid-area: trend; }
+.hpm-wo-ex-lbl {
+  display: none;
+}
+@container (max-width: 599px) {
+  .hpm-wo-ex-head {
+    display: none !important;
+  }
+  .hpm-wo-ex-row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr) minmax(0, 1.3fr) minmax(0, 1fr);
+    grid-template-areas:
+      "name name name trend"
+      "total recent rec last";
+    gap: 8px 10px;
+  }
+  .hpm-wo-ex-lbl {
+    display: block;
+  }
+}
+/* 手机竖屏：四格挤一行会把累计截成「5,527 …」，纪录（两行字最长）单独占一行 */
+@container (max-width: 439px) {
+  .hpm-wo-ex-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+      "name name trend"
+      "total recent last"
+      "rec rec rec";
+  }
+}
+
 /* ── 高亮标注：常驻工具栏（core/highlight-dock.ts）── */
 .hpm-hlbar {
   flex: 0 0 auto;
