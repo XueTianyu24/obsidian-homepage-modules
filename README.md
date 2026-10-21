@@ -257,7 +257,7 @@
 
 <div align="center">
   <img src="docs/img/module-quick-commands.png" width="600" alt="快捷命令"><br>
-  <b>⚡ 快捷命令</b><br><sub>一键执行任意 Obsidian 命令的按钮行（如笔记同步、全局搜索、命令面板）。</sub>
+  <b>⚡ 快捷命令</b><br><sub>一键执行任意 Obsidian 命令的按钮行（如笔记同步、全局搜索、命令面板）。常用的可以放到底部状态栏，不用回主页就能点；Remotely Save 的手动同步默认就放在状态栏（仅桌面端）。</sub>
 </div>
 
 ---
