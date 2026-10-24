@@ -58,6 +58,29 @@ body:not(.is-ios):not(.is-android) input[type="date"]:not([disabled="true"]) {
 .homepage-note-md h4 { margin: 0.5em 0 0.3em; }
 .homepage-note-md ul.contains-task-list { padding-left: 0.6em; }
 
+/* 多行事项文字（core/multiline）：只排换行与列表，间距收紧到和单行条目同一节奏 */
+.homepage-ml { display: block; }
+.homepage-ml ul,
+.homepage-ml ol { margin: 0.15em 0; padding-left: 1.3em; }
+/* Obsidian 阅读视图给 li 加了 --list-indent 的左外边距，叠上 ul 的内边距会缩进两层，这里压掉 */
+.homepage-ml li { margin: 0.05em 0; margin-inline-start: 0 !important; }
+.homepage-ml li > ul,
+.homepage-ml li > ol { margin: 0.05em 0; }
+.homepage-ml-gap { height: 0.45em; }
+/* 输入框：textarea 去掉主题默认的边框底色，外观交给宿主的行内样式 */
+textarea.homepage-ml-input {
+  resize: none;
+  overflow: hidden;
+  min-height: 0;
+  box-shadow: none;
+  white-space: pre-wrap;
+}
+/* 条目里出现多行时（markMlRow），行内的勾选框 / 色点 / 按钮改成贴第一行，不再上下居中 */
+.homepage-ml-row { align-items: flex-start !important; }
+.homepage-ml-row > * { margin-top: 2px; }
+.homepage-ml-row > .homepage-ml-main { margin-top: 0; }
+.homepage-ml-row > .homepage-ml-dot { margin-top: 5px; }
+
 /* 专注规划「周计划」内嵌 Live Preview 编辑器：加粗在编辑态也显示为淡粉红（与预览态一致） */
 .homepage-plan-editor .cm-strong {
   color: #f7abc6;
