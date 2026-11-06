@@ -165,6 +165,16 @@ input.hpm-ph.hpm-wk-hint::placeholder {
   transition: transform 0.3s ease;
 }
 
+/* 画布思维导图：右侧工具栏的开关按钮，这张画布开着时用强调色填底 */
+.hpm-canvas-mindmap-toggle .canvas-control-item.is-active {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.hpm-canvas-mindmap-toggle .canvas-control-item.is-active:hover {
+  background: var(--interactive-accent-hover);
+  color: var(--text-on-accent);
+}
+
 /* 画布思维导图：子树折叠 —— 渲染层隐藏（节点 + 连线；插件卸载此规则消失、全部复原可见） */
 .hpm-canvas-collapse-hidden {
   display: none !important;
