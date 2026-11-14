@@ -20,6 +20,14 @@
   max-width: 96vw;
 }
 
+/* 手机 / 平板软键盘弹出时，本插件的弹窗（core/modal.ts 的 HpModal）整体让到键盘上方。
+ * Obsidian 只把主界面缩到键盘上方，弹窗挂在 body 上仍按整屏居中，下半截按钮会被键盘盖住。
+ * margin-bottom 把居中位置抬上去；max-height 再扣掉键盘高，弹窗太高时在里面滚动 */
+.is-mobile .modal-container .modal.homepage-modal {
+  margin-bottom: var(--keyboard-height, 0px);
+  max-height: calc(var(--dialog-max-height, 100vh) - var(--keyboard-height, 0px));
+}
+
 /* 自律打卡单项详情弹窗：比默认宽，月度的日历和统计能左右并排 */
 .homepage-discipline-detail {
   width: 780px;
