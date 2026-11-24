@@ -66,6 +66,19 @@ body:not(.is-ios):not(.is-android) input[type="date"]:not([disabled="true"]) {
 .homepage-note-md h4 { margin: 0.5em 0 0.3em; }
 .homepage-note-md ul.contains-task-list { padding-left: 0.6em; }
 
+/* 人生体系「详细心法」：笔记里的各级标题按卡片字号收小，不撑成正文大标题 */
+.homepage-note-md.hp-compass-detail h1,
+.homepage-note-md.hp-compass-detail h2,
+.homepage-note-md.hp-compass-detail h3,
+.homepage-note-md.hp-compass-detail h4,
+.homepage-note-md.hp-compass-detail h5,
+.homepage-note-md.hp-compass-detail h6 {
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0.9em 0 0.3em;
+}
+.homepage-note-md.hp-compass-detail blockquote { margin: 0.6em 0; }
+
 /* 多行事项文字（core/multiline）：只排换行与列表，间距收紧到和单行条目同一节奏 */
 .homepage-ml { display: block; }
 .homepage-ml ul,
