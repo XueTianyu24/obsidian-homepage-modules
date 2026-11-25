@@ -468,3 +468,11 @@ body.hpm-pomo-bar .hpm-pomo-bar-btn {
     grid-row: 2;
   }
 }
+
+/* 工作台手机顶部：当前焦点 + 今日打卡共用一行横滑。空的那块不占位（否则多出一个 gap） */
+.hpm-wb-mtrack > :empty {
+  display: none;
+}
+.hpm-wb-mtrack::-webkit-scrollbar {
+  display: none;
+}
