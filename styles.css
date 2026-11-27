@@ -420,7 +420,8 @@ body.hpm-pomo-bar.is-popout-window .workspace::before,
 body.hpm-pomo-bar.is-popout-window .workspace::after {
   display: none !important;
 }
-body.hpm-pomo-bar .hpm-pomo-bar-row {
+body.hpm-pomo-bar .hpm-pomo-bar-row,
+body.hpm-pomo-bar .hpm-pomo-bar-taskline {
   -webkit-app-region: drag;
 }
 body.hpm-pomo-bar .hpm-pomo-bar-btn {
