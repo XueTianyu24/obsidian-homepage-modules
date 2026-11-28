@@ -438,11 +438,12 @@ body.hpm-pomo-bar.is-popout-window .workspace::before,
 body.hpm-pomo-bar.is-popout-window .workspace::after {
   display: none !important;
 }
-body.hpm-pomo-bar .hpm-pomo-bar-row,
-body.hpm-pomo-bar .hpm-pomo-bar-taskline {
+body.hpm-pomo-bar .hpm-pomo-bar-row {
   -webkit-app-region: drag;
 }
-body.hpm-pomo-bar .hpm-pomo-bar-btn {
+/* 「做什么」那一行点一下就地改字，和按钮一样退出拖动区 */
+body.hpm-pomo-bar .hpm-pomo-bar-btn,
+body.hpm-pomo-bar .hpm-pomo-bar-taskline {
   -webkit-app-region: no-drag;
 }
 
